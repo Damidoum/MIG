@@ -7,3 +7,5 @@ Quelques liens :
 Test-Classification -> familirisation avec la notion de classification des séries temporelles. On teste les fonctions sur des données covid. 
 
 TraitementEpilon -> importation des données du tenseur de déformation, traitement de ces données et création de classes appropriées. 
+
+kriging_final -> nécéssite les données au format krig_class{i}.csv, fait le krigeage, sauvegarde le metamodèle dans une study openturns et les courbes d'approximation du modèle en png
