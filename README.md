@@ -19,6 +19,8 @@ study.setStorageManager(ot.XMLStorageManager(f'metamodel_par_classe.xml'))
 
 i = 5 #numéro de la classe
 
-study.load()
-metamodel = ot.Function()
+study.load() #charge le fichier
+
+metamodel = ot.Function() #crée un metamodèle vide
+
 study.fillObject(f'metamodel_class{i}', metamodel) #metamodel est le modèle en question, il prend un tuple (espilon300, epsilon600) et renvoie la valeur de sigma
