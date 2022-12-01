@@ -14,6 +14,7 @@ pour l'utilisation du fichier xml:
 import openturns as ot
 
 study = ot.Study()
+
 study.setStorageManager(ot.XMLStorageManager(f'metamodel_par_classe.xml'))
 
 i = 5 #numéro de la classe
