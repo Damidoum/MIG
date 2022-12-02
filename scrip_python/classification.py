@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import os
+import sys
 
 # from tslearn.clustering import TimeSeriesKMeans
 
@@ -90,4 +91,3 @@ def classification(timeSeries_file, coord_file, classe_file, number_of_cluster):
     df["classe"] = prediction
     df.set_index(["node"], index=True)
     df.to_csv(classe_file)
-
