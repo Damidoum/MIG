@@ -10,7 +10,7 @@ for i in range(10):
     if i != 2: 
         study.fillObject(f'metamodel_class{i}', lst[i]) 
 
-df = pd.read_csv('for_krigeage.csv', index_col = 'node')
+df = pd.read_csv('../../data/krigeage/for_krigeage.csv', index_col = 'node')
 dico = {}
 for x in df.index : 
     dico[x] = int(x.split('_')[1])
@@ -31,5 +31,5 @@ for k in range(10):
         df3['sig'] = l
         res.append(pd.DataFrame(df3['sig']))
 df_res = pd.concat(res)
-df_res.to_csv('sig.csv')
+df_res.to_csv('../../data/sig.csv')
 
