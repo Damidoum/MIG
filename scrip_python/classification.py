@@ -4,8 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import os
 import sys
-
-# from tslearn.clustering import TimeSeriesKMeans
+from tslearn.clustering import TimeSeriesKMeans
 
 
 def format_post_process(file, folder):
